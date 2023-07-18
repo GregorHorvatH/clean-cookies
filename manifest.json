@@ -1,0 +1,17 @@
+{
+  "name": "Clean Cookies",
+  "description": "Base Level Cookie Cleaning",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "clean.html",
+    "default_icon": "clean.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["clean.js"]
+    }
+  ],
+  "permissions": ["tabs", "http://*/*", "https://*/*"]
+}
